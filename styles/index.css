@@ -1,0 +1,9 @@
+/* Global */
+@import 'normalize.css';
+@import 'fonts.css';
+@import 'global.css';
+
+/* Blocks */
+@import 'header/header.css';
+@import 'page.css';
+@import 'footer/footer.css';

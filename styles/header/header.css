@@ -1,0 +1,19 @@
+@import "menu.css";
+
+/* header */
+
+.header section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.intro__title {
+  font-size: 60px;
+  font-weight: 900;
+
+  margin-bottom: 30px;
+}
+
+.intro__text:not(:last-child) {
+  margin-bottom: 30px;
+}

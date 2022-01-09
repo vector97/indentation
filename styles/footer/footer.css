@@ -1,0 +1,37 @@
+.footer {
+  margin-bottom: 50px;
+}
+
+.footer__container {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.final {
+  padding: 0;
+}
+
+.final__heading {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.final__list {
+  padding-left: 1em;
+  margin-bottom: 30px;
+}
+
+.final__list > .final__item:before {
+  display: inline-block;
+  content: "—";
+  width: 1em;
+  margin-left: -1em;
+}
+
+.final__item:not(:last-child) {
+  margin-bottom: 10px;
+}
