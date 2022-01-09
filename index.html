@@ -70,20 +70,20 @@
         <h2 class="dom__heading heading">Отступ задается последнему возможному элементу в DOM-дереве</h2>
 
         <p class="dom__text text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
-        <img class="dom__img img_centered" src="img/page/dom-01.jpg" alt="">
-        <img class="dom__img img_centered" src="img/page/dom-02.jpg" alt="">
+        <img class="dom__img img_centered" src="img/page/dom-01.jpg" alt="" height="537">
+        <img class="dom__img img_centered" src="img/page/dom-02.jpg" alt="" height="450">
 
         <p class="dom__text text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
         <div class="dom_bordered">
-          <img class="dom__img img_centered" src="img/page/dom-03.jpg" alt="">
+          <img class="dom__img img_centered" src="img/page/dom-03.jpg" alt="" height="427">
           <p class="dom__text text"><strong>ВАЖНО:</strong> здесь <i>.list-item</i> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
         </div>
 
         <p class="dom__text text">Казалось бы, можно задать отступ параграфу <i>&lt;p&gt;</i>, либо обёртке <i>&lt;article&gt;</i> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
         <p class="dom__text text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-        <img class="dom__img img_centered" src="img/page/dom-04.jpg" alt="">
+        <img class="dom__img img_centered" src="img/page/dom-04.jpg" alt="" height="164">
         <p class="dom__text text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <i>section</i>. Именно для него задается <i>padding-top</i>, а не <i>div</i> с классом <i>container</i>. Свойства <i>margin</i>, которые стоят по умолчанию необходимо обнулить.</p>
-        <img class="dom__img img_centered" src="img/page/dom-05.jpg" alt="">
+        <img class="dom__img img_centered" src="img/page/dom-05.jpg" alt="" height="504">
         <p class="dom__text text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
       </section>
 
@@ -93,26 +93,26 @@
         <p class="null__text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
         <p class="null__text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
 
-        <img class="null__img img_centered" src="img/page/null-01.jpg" alt="">
+        <img class="null__img img_centered" src="img/page/null-01.jpg" alt="" height="600">
 
         <p class="null__text text">В соответствии со вторым принципом: последний <i>margin</i> обнуляется, а нижний отступ задаётся через <i>padding</i> для <i>section</i>. Я чаще всего задаю <i>padding</i> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <i>padding-top:50px</i> и <i>padding-bottom:50px</i>.</p>
 
-        <img class="null__img img_centered" src="img/page/null-02.jpg" alt="">
-        <img class="null__img img_centered" src="img/page/null-03.jpg" alt="" style="margin-bottom: 0;">
-        <img class="null__img img_centered" src="img/page/null-04.jpg" alt="">
+        <img class="null__img img_centered" src="img/page/null-02.jpg" alt="" height="607">
+        <img class="null__img img_centered" src="img/page/null-03.jpg" alt="" height="528" style="margin-bottom: 0;">
+        <img class="null__img img_centered" src="img/page/null-04.jpg" alt="" height="530">
 
         <p class="null__text text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
 
-        <img class="null__img img_centered" src="img/page/null-05.jpg" alt="">
-        <img class="null__img img_centered" src="img/page/null-06.jpg" alt="">
+        <img class="null__img img_centered" src="img/page/null-05.jpg" alt="" height="88">
+        <img class="null__img img_centered" src="img/page/null-06.jpg" alt="" height="475">
 
         <p class="null__text text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
 
-        <img class="null__img img_centered" src="img/page/null-07.jpg" alt="">
+        <img class="null__img img_centered" src="img/page/null-07.jpg" alt="" height="110">
 
         <p class="null__text text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
 
-        <img class="null__img img_centered" src="img/page/null-08.jpg" alt="">
+        <img class="null__img img_centered" src="img/page/null-08.jpg" alt="" height="383">
       </section>
     </div>
   </main>
